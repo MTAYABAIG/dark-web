@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,800;1,400&family=Poppins:wght@400;500;700&display=swap");
+/* @import '@fortawesome/fontawesome-free/css/all.css'; */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+
+
+@layer utilities {
+  .p-content {
+    @apply font-normal tracking-wide text-xs text-center ;
+  }
+  .h1-content{
+   @apply text-3xl sm:text-4xl   xl:text-5xl font-bold text-center sm:text-left tracking-widest leading-[2.5rem] ;
+  }
+  .h2-content{
+    @apply font-semibold sm:font-bold text-base sm:text-lg tracking-wider;
+  }
+}
+
+@media screen and (max-width: 1170px) {
+    .hearder-item {
+      padding-top: 0;
+      margin: auto;
+    }
+  }
+
+  @media screen and (min-width:1069px) and (max-width: 1280px) {
+
+    .Yellow-Cloud{
+        top: -29%;
+    }
+  }
